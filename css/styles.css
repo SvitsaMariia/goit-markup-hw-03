@@ -42,12 +42,15 @@ p {
     padding-left: 15px;
     padding-right: 15px;
 }
+.header {
+  border-bottom: 1px solid #E7E9FC;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E9FC;
 }
 .logo {
+    display: block;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -78,6 +81,7 @@ img {
 .address-header,
 .address-list {
     display: flex;
+    align-items: center;
 }
 .nav-list .item,
 .address-list .item {
@@ -140,9 +144,9 @@ img {
     padding-bottom: 120px;
 }
 /* Section hero 1 */
-.section.hero {
+.hero {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     background-color: var(--title-text-color);
     padding-top: 188px; 
     padding-bottom: 188px;
@@ -186,7 +190,7 @@ img {
     line-height: 1.2;
     color: var(--title-text-color);
     letter-spacing: 0.02em; 
-    padding-bottom: 8px;  
+    margin-bottom: 8px;  
 }
 .work-description {
     line-height: 1.5;
@@ -204,7 +208,7 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-    margin-left: 420px;
+    text-align: center;
 }
 .examples-list {
     display: flex;
@@ -250,7 +254,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
 /* PORTFOLIO */
 .filters-button {
     font-family: inherit;
@@ -263,8 +266,7 @@ img {
     cursor: pointer;
     border: 1px solid var(--secondary-accent-color);
     border-radius: 4px;
-    height: 48px;
-    padding: 12px 24px;
+    padding: 11px 23px;
 }
 button:hover,
 button:focus {
@@ -290,6 +292,10 @@ button:focus {
     flex-wrap: wrap;
     gap: 48px 24px;
 }
+.works-link {
+    display: block;
+    text-decoration: none;
+}
 .services-content {
     border: 1px solid #E7E9FC;
     padding: 32px 16px;
@@ -305,6 +311,7 @@ button:focus {
 .industry {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 .services,
 .industry {
@@ -323,9 +330,10 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-accent-color);
-    margin-top: 16px;
 }
 .footer-logo {
+    display: block;
+    margin-bottom: 16px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
